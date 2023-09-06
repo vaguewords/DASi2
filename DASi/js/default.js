@@ -12,3 +12,5 @@ jQuery(function($) {
     window.location = linkLocation;
     }
     });
+
+ // tabs

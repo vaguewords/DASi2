@@ -266,6 +266,12 @@ ul, li, ul li {
 .pseudo_margin {
   margin-top: 60px!important;
 }
+.pseudo_padding-2 {
+  padding-top: 120px!important;
+}
+.pseudo_margin-2 {
+  margin-top: 120px!important;
+}
 /*scrollbar*/
 /* width */
 ::-webkit-scrollbar {
@@ -541,6 +547,62 @@ tr:nth-child(even):hover {
 .fa-remove {
   color: red;
 }
+
+/*tabs*/
+/* 탭 전체 스타일 */
+.tabs {
+
+}
+
+/* 탭 스타일 */
+.tab_item {
+  width: calc(100%/3);
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-dark);
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  border: 1px solid var(--color-white);
+}
+.tab_item:hover {
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content,
+#design:checked ~ #design_content {
+  display: block;
+}
+
+/* 선택된 탭 스타일 */
+.tabs input:checked + .tab_item {
+  border-color: var(--color-dark);
+  background-color: var(--color-dark);
+  color: var(--color-white)
+}
+
+
 
 /*footer*/
 footer {
