@@ -13,4 +13,3 @@ jQuery(function($) {
     }
     });
 
- // tabs
